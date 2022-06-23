@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<style>
+</style>
+</head>
+<body>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn"> РАЗМЕРЫ </button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="back_1.html">500 на 300</a>
+    <a href="back_2.html">800 на 500</a>
+    <a href="back_3.html">1050 на 700</a>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+</script>
+<form action="index.html">
+<button> ОБРАТНО </button>
+<br>
+<br>
+<img src="500and300.png">
+
+</form>
+</body>
+</html>

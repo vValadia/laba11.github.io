@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+$(document).ready(function (){
+	$(':radio').click(function (){
+		if (this.checked) {
+			$('#test').attr('src',this.value);
+		}
+	});
+});
+</script>
+</head>
+<body>
+<img id='test' src='img_1.jpg' />
+<div>
+	<label>
+		<input type='radio' name='scr' value='img_2.jpg' />
+		поворот 
+	</label>
+</div>
+<div>
+	<label>
+		<input type='radio' name='scr' value='img_5.jpg' />
+		отражение 
+	</label>
+</div>
+<div>
+	<label>
+		<input type='radio' name='scr' value='img_3.jpg' />
+		увеличение
+	</label>
+</div>
+<div>
+	<label>
+		<input type='radio' name='scr' value='img_4.jpg' />
+		прозрачность
+	</label>
+<form action="back_1.html">
+<button> Размеры </button>
+</form>
+</div>
+</body>
+</html>
